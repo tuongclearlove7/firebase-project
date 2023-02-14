@@ -1,0 +1,249 @@
+#mybg {
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+.but {
+    width: 42px;
+    position: fixed;
+    z-index: 2;
+    left: 0px;
+    top: 50px;
+    font-size: 10px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+}
+
+.but:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.but:active {
+    color: #000
+}
+
+.but:active:after {
+    background: transparent;
+}
+
+.but:hover:before {
+    opacity: 1;
+}
+
+.but:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.hello p,.hello h3,.hello h4{
+    position: fixed;
+    z-index: 0;
+    height: 0;
+    top: 15%;
+    left: 40%;
+    right: 0px;
+    width: 21%;
+    font-size: 25px;
+    
+    
+}
+.hello p,.hello h3,.hello h4 {
+    color: black;
+    cursor: no-drop;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    opacity: 0.9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
+}
+.hello p:hover, .hello h3:hover,.hello h4:hover{
+    color: rgb(233, 8, 125);
+    text-decoration: none;
+    opacity: 10;
+}
+
+a h4{
+    cursor: pointer;
+    position: relative;
+    top: 32rem;
+    color: red;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+.text {
+    position: relative;
+    top: 33rem;
+    text-align: center;
+}
+.text a{
+    width: 15%;
+    text-decoration: none;
+    line-height: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+div.text a:hover{
+    color: rgb(96, 96, 211);
+    text-decoration: underline;
+}
+
+.frame{
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    top: 150px;
+    left: 1px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
+}
+div.column1 .span1{
+    position: fixed;
+    z-index: 10;
+    display: table;
+    cursor: pointer;
+    margin: 37px 0px 0px -8px;
+    width: 85px;
+    height: 100%;
+    color: #fff;
+    background-color: #1f1f1f;
+    transition: all 0.8s ease;
+    
+}
+div.column2{
+    position: fixed;
+    z-index: 10;
+    display: table;
+    cursor: pointer;
+    display: block;
+    right: 0px;
+    top: 55px;
+    width: 85px;
+    height: 100%;
+    color: #fff;
+    background-color: #1f1f1f;
+    transition: all 0.8s ease;
+}
+.column1 .span1:hover{
+    opacity: 1;
+}
+#mylogo{
+    position: fixed;
+    width: 50px;
+    top: 110px;
+    left: 15px;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+}
+#mylogo:hover{
+    opacity: 10;
+    top: 100px;
+}
+
+.MyFooter {
+    position: fixed;
+    background-color: #1f1f1f;
+    opacity: 0.8;
+    z-index: 1;
+    left: 0px;
+    bottom: 0rem;
+    width: 100%;
+    height: 130px;
+}
+.license{
+    text-decoration: none;
+    position: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: chartreuse;
+    display: flex;
+    justify-content: center;
+    bottom: 30px;
+    width: 100%;
+    object-fit: cover;
+    font-size: 11px;
+}
+.license:hover{
+    color: white;
+    text-decoration: none;
+}
+.stack2{
+    text-decoration: none;
+    position: fixed;
+    font-family: fantasy;
+    color: rgb(238, 72, 11);
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    z-index: 1000;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
+    font-size: 20px;
+    bottom: 60px;
+    width: 100%;
+}
+.ads_left{
+    position: fixed;
+    z-index: 1001;
+    left: 70px;
+    bottom: 20px;
+    width: 20%;
+}
+.ads_right{
+    position: fixed;
+    z-index: 1001;
+    right:  70px;
+    bottom: 20px;
+    width: 27%;
+}
+.ads_left a,.ads_right a{
+    padding: 10px;
+    font-size: 13px;
+    color: rgb(128, 128, 128);
+}
+.ads_left a:hover,.ads_right a:hover{
+    text-decoration: underline;
+    color: #58a6ff;
+}
+
+
+@media only screen and (max-width: 1250px){
+    .ads_left{
+        width: 20%;
+        left: 80px;
+    }
+}
